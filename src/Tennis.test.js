@@ -37,4 +37,13 @@ describe("Tennis Score", () => {
     it("Debería retornar 'Advantage for p2' cuando jugador1 tiene 3 y jugador2 4", () => {
         expect(tennisScore(3, 4)).toEqual("Advantage for p2");
     });
+    it("Debería retornar 'Deuce' cuando ambos jugadores tienen 4 puntos", () => {
+        expect(tennisScore(4, 4)).toEqual("Deuce");
+    });
+    it("Debería retornar 'Game for p1' cuando jugador1 tiene 5 y jugador2 3", () => {
+        expect(tennisScore(5, 3)).toEqual("Game for p1");
+    });
+    it("Debería retornar 'Game for p2' cuando jugador1 tiene 3 y jugador2 5", () => {
+        expect(tennisScore(3, 5)).toEqual("Game for p2");
+    });
 });
