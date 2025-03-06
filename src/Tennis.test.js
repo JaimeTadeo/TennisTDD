@@ -22,4 +22,7 @@ describe("Tennis Score", () => {
     it("Debería retornar '0 - 40' cuando jugador1 tiene 0 y jugador2 3", () => {
         expect(tennisScore(0, 3)).toEqual("0 - 40");
     });
+    it("Debería retornar '15 - 30' cuando jugador1 tiene 1 y jugador2 2", () => {
+        expect(tennisScore(1, 2)).toEqual("15 - 30");
+    });
 });
