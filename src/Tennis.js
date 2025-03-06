@@ -20,6 +20,9 @@ function tennisScore(player1Score, player2Score) {
     if (player1Score === 1 && player2Score === 2) {
         return "15 - 30";
     }
+    if (player1Score === 2 && player2Score === 2) {
+        return "Deuce";
+    }
     return "love - love"; 
 }
 

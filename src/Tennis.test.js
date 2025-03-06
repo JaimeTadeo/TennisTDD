@@ -24,11 +24,14 @@ describe("Tennis Score", () => {
     it("debería mostrar 0 - 30 cuando el jugador 1 tiene 0 puntos y el jugador 2 tiene 2", () => {
         expect(tennisScore(0, 2)).toEqual("0 - 30");
     });
-    
+
     it("Debería retornar '0 - 40' cuando jugador1 tiene 0 y jugador2 3", () => {
         expect(tennisScore(0, 3)).toEqual("0 - 40");
     });
     it("Debería retornar '15 - 30' cuando jugador1 tiene 1 y jugador2 2", () => {
         expect(tennisScore(1, 2)).toEqual("15 - 30");
+    });
+    it("Debería retornar 'Deuce' cuando jugador1 tiene 2 y jugador2 2", () => {
+        expect(tennisScore(2, 2)).toEqual("Deuce");
     });
 });
