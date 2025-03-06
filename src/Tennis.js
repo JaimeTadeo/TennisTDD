@@ -8,6 +8,10 @@ function tennisScore(player1Score, player2Score) {
     if (player1Score === 3 && player2Score === 0) {
         return "40 - 0";
     }
+
+    if (player1Score === 0 && player2Score === 2) {
+        return "0 - 30";
+    }
     return "love - love"; 
 }
 
