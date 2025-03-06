@@ -25,6 +25,9 @@ function tennisScore(player1Score, player2Score) {
     if (player1Score >= 4 && player2Score >= 3 && (player1Score - player2Score === 1)) {
         return "Advantage for p1";
     }
+    if (player1Score >= 3 && player2Score >= 4 && (player2Score - player1Score === 1)) {
+        return "Advantage for p2";
+    }
     return "love - love"; 
 }
 
